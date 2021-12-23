@@ -1,0 +1,186 @@
+Getting started with php
+*************************
+1. Goto your document Root
+	c:/laragon/www
+	
+launch cmd or gitbash
+
+2. create folder
+	mkdir app-2021
+	
+3. goto inside app-2021 folder
+	cd app-2021
+
+
+
+3. How to create php file
+	start notepad <file-name.php>
+	for eg:
+	start notepad p1.php
+	start notepad p2.php
+	start notepad p3.php
+	start notepad p4.php
+
+4. How to run th program:-
+	php <filename.php>
+
+5. there are two possible cases.
+	case 1 : you will get a output
+	case 2 : php niot recognised as internal or external command
+	
+	
+	you have written the code of php ----> execute php interpreter
+	php interpreter ----> laragon
+	1. set the Environment variable set
+	2. use the laragon terminal
+	
+How many ways we can run php programs:
+1. using laragon terminal
+	launch laragon terminal
+	goto file
+	type php filename.php  
+	
+	output : terminal ----> php cli mode
+	
+2. using cmd/git bash ....
+	launh cmd/git bash
+	goto file
+	type 
+		php filename.php
+	
+	output: terminal ---> php cli mode
+	
+3. using php inbuilt server
+	cli server
+	goto file 
+	type
+		php -S localhost:<port-no>
+		
+	goto browser
+	make a request
+	localhost:<port-no>
+	type URL: filename.php
+	
+	url:
+		localhost:<port-no>/file-name.php
+		
+	output : web ---> php cli web mode
+	
+note: in this case you need not to enable laragon server.
+
+in php version 5.6.2 php supports inbuilt server
+	
+How to close the running server 
+ctrl + c :- current executing command close	
+
+
+4. Laragon (server) web-interface:-
+	server : on
+	php : apache : on
+	mysql : on
+	
+	make the request using browser, for http://localhost:<apache-port>
+	http://localhost:786
+	
+	or
+	Quick Open using cmd
+	window+R
+	type cmd hit enter
+	
+-----------------------------------------------------------------------------------------
+
+How any ways you can execute the PHP code
+1. php cli mode
+		a. laragon terminal
+		b. git bash
+		c. cmd/powershell
+		
+		d. php interactive mode ---> php REPL ---> php>
+
+		How to launch php repl mode
+		cmd:-
+			type php -a
+			php> without using opening and closing of php tags
+			but ; is mandatory.
+			
+			wap in php interactive
+			php > $x="ravi";
+			php > echo $x;
+			ravi
+			
+			Note: php -a and php -S, here -a and -S are called as command line argument.
+			
+			on suppliyng these arguments,  the program starts executing in the same given environment.
+			
+			How to see list of all arguments:-
+			
+			cmd: php -help
+			
+			php -a :- interactive mode
+			php -r :- execute the code as readline
+			php -v :- display the current version og php
+			php --version : -display the current version 
+			php -h :- run the helps
+			php -m :- loads all the important modules initialised by php.ini
+			
+			
+			wap in php to run a php code in readline
+			**************************************
+			we will use php -r command to run the code in readline
+			
+			cmd:> php -r "echo 'hello world';"
+			hello world
+			
+			
+	
+2. php web mode	
+		a. php cli server: php -S <url>:<any-port-no>
+		b. using laragon web interface
+		
+		
+We have only two types of program in a programming language
+1. with input : Addition oftwo numbers with input.
+2. without input : Hello world
+
+
+How to create  our first input program in web-interface
+*****************************************************************************88
+
+Input fields : HTML FORMS
+
+1. create a html form
+2. Add any number of field you require
+3. Add a submit button
+4. Add form Tag, with Action, and method="GET" or method="POST"
+5. Add the server-side page url which is going to handle the request at server-side.
+6. Fill the form and Hit on submit button.
+7. You will get, a Not Found 404 error. Because resource does not exist.
+8. create a server-side page, which can handle client request and process data and give the response.
+9. use the superglobal variable, of  php to accept the request using
+	$_REQUEST to handle the form fields.
+10. since, $_REQUEST is a, Array, it has a key as name field attribute in HTML form and use echo statement to display the output and after words comment it.
+11. Nte that, add id and name attribute on html forms to handle each form controls on server side.
+	Concept: This concept is valid for all language jsp, python, asp.net and php also
+	id ---> for javascript or client side.
+	name ---> for server side 
+	
+	
+**************************************************************************************************
+
+Task:
+1. wap in php to accept name and display on another page
+2. WAP in php to take 3 numbers as input and display sum
+3. wap in php to make calculator to find sum, subtract, mul, div
+4. wap in php take info of user name, email, password, mobile and display his info in next page
+5. wap in php p,r,t and find S.I.
+6. wap in php accept length, breadth from user and calculate area of rectangle and parameter
+7. wap in php to take radius as input and find area, circumfrence of a circle
+8. wap in php to find remainder of a given two numbers when a/b
+9. wap in php to find remainder of a given two numbers when a/b without modulo operator
+10. wap in php to take a and b as input and use -,/,* operator to find sum but you are not allowed to use + operator and condition
+	1. a>b
+	2. a>0
+	3. b>0
+11. wap in php to take input of 5 subject of student, Enter his marks and show the marks of each subject with overall %
+
+		

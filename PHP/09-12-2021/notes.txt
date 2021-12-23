@@ -1,0 +1,284 @@
+Basic Concept Related to Programming:-
+***************************************
+1.How to Create Folder dynamically via Date using cmd
+	mkdir %date%
+
+concept 1:- a folder cannot contain, Illegal characters like \,/,:,?,*,"",<>,|
+
+
+If while running the command, mkdir %date% if you get an error, incorrect syntax error
+Make sure your date format does not contain illegal character \,/,?,*,"",|,:,<>
+
+
+Basic story:-
+php is a our technology, and php is a server side language.
+
+Why not php will execute on the browser?
+https://www.facebook.com/  :   resource
+file:///D:/APP-2021/PHP/home.html   :   resourse
+
+1. According to client server model anything which is loaded by client(browser) will be called as resourse.
+2. 
+
+Common terms used in Web Tech:-
+1. Human (End User)
+2. God  (Server)
+3. Prayers  (Request)
+4. Blessings  (Response)
+
+
+How End User is going to make a request:-
+End user will make a request using URL
+
+End User Will use Browser as a Interface(Platform) to make a Request by using URL.
+
+How Many Types of request are there:-
+There can be only 2 types of requests
+	1. Synchronous Request :- PHP, Python, .Net, JSP,..... etc
+	2. Asynchronous Request :- Ajax, Node.js
+
+
+Synchronous Request:- A request in which one event depends on other request to happen, 
+such type of request is called as synchronous request. And these requests are blocking in nature
+
+For Example:- 
+1. JS ----> window.alert();
+2. PHP ----> form submit
+
+Asynchronous Request:- A request in which one event does not depend upon other event, such type of request is called as a 
+asynchoronous request, These request are non-blocking in nature.
+
+1. Node.js  ---> window.alert();
+	R1 -------> wait
+	R2 -------> Process ---> Success
+	R3 -------> wait
+	R4 -------> Process --->Success
+	
+2. PHP
+	R1 -------> wait ---> success
+	R2 -------> wait ---> process ---> success
+	R3 -------> wait ---> process ---> success
+	R4 -------> wait ---> process
+	
+
+
+
+
+Getting Started with LARAGON :-
+1. While opening laragon screen you will called as laragon control panel.
+
+1. menu :-  All the importaant settings, logs, errors, initialisation, configurations, related to, apache, mysql, php, will
+be listed here.
+
+Important files:
+1.  .ini => initialisation file
+			it will contain all the important services, assets, resources,
+			permission, utilities, required by any program during startup.
+			
+			ex:   php.ini,  laragon.ini,  mysql.ini,  etc...
+			
+2.  .log => log file
+			it will contain all the run time errors and exceptions occurred during execution of the program
+			
+				it stores the information with alerts status
+				1. success
+				2. info
+				3. warning
+				4. danger (critical)
+				
+
+Question:-  In live server displayerror are disabled being a developer how will you find the, errors for development environment.
+
+Ans:-
+error log
+
+Note ::
+What is scenerio in server environment
+www.facebook.com (master)  : Live 10 lakhs traffic
+test.facebook.com  (testing)    | PUSH
+dev.facebook.com   (dev-1)   | PUSH
+
+
+3.  .cnf or .conf => configuration file
+			configurations file, it contains the configuration which are required during execution of the program at
+			runtime execution
+
+
+WWW => This menu will open and show all the projects you will create any c:/laragon/www
+																			|p1.php
+																			|array
+																			|online examination
+																				
+
+		1. server document Root :- it contain the system path 
+								c:/laragon/www
+		
+		what is the document root of Wamp?
+			c:/wamp/www
+		
+		what is the document root of Xammp?
+			c:/xammp/htdocs
+			
+		
+		2. Explore Menu :- it is used to, open the existing project in explorer window.
+		
+		3. Share :- It is used to share the resources with your teammates connected to work.
+		
+		4. Project Launcher :- It will launch every project in URL
+		
+
+Quick App :-  In PHP every project is called as App.
+			
+			These Apps can be Classified as [Community-Name] App
+			for ex:-
+					1. Wordpress community :-  wordpress App
+					2. laravel community  :-  laravel App
+					3. Drupal community  :-  drupal App
+					4. CodeIgnitor community  :-  CodeIgnitor App  or CI App
+					...
+					...
+					etc..
+					
+
+			Using quick app we can Automatically, configure and Install Wordpress
+
+
+github awnishmmg zwave plug in	
+
+https://github.com/awnishmmg/Zwavexampp-list-plugin/blob/master/Xampp-Directory-Listing.zip?raw=true		
+			
+		
+		
+		
+
+
+
+What is Index.php?
+index.php is the by default file of Apache which will be directly loaded in the URL.
+
+Which server you are using?
+Apache Server
+
+Apache server is INSTALLED in which server?
+Laragon
+
+What is my current file name?
+hello.php
+
+Where this is stored?
+inside c:/laragon/www inside laragon server
+
+From where you want to access hello.php
+
+
+
+Where index.php is stored?
+inside c:/laragon/www
+					|index.php
+					
+
+From where you can access this index.php
+from browser (client)
+make the request
+
+URL(uniform resource locator)
+URI(unifrom resource Identifier)
+
+URL has following parts:-
+************************
+URL is a kind of web-address to some resource located at any server.
+URL can be of two types:-
+1. Protocol based
+2. Non-Protocol based: uses IP Address
+
+
+
+
+Difference between HTTP and HTTPS
+
+							HTTP						HTTPS
+----------------------------------------------------------------------------------------------					
+URL					|		https://			|		https://
+Security			|		Unsecure			|		Enhanced Security
+Port				|		PORT 80				|		PORT 443
+OSI layer			|		Application Layer	|		Transport Layer
+TLS Certificate		|		NO					|		YES
+Doamin validation	|		Not Required		|		Domain validation (+legal validation)
+Encryption			|		No					|		Yes
+
+
+URL SYNTAX:-
+[protocol-name]://<sub-domain>/<domain>/<host>/:<PORT>/<resource-url>
+
+https://            protocol
+test                sub-domain
+seeksolution		domain-name
+.in                 host
+:<443>              port
+web-address/login   resource-url
+end-point
+
+uri-segment:-  each part separated by / single slash, is called as uri-segment
+
+after port :-  it is basically path to resource
+
+after protocol and before endpoints (test.seeksolution.in:443) is called as domain name.
+Every Domain may have a sub-domain or not but will have a port.
+and every domain will have a IP Address, since one cannot learn or remember IP Address so, we provide a allias name
+and this allias name is called as domain name and this domain name has to be registerd (mapped) with a IP Address in DNS.
+
+Q.Identify protocol, port, uri-segment, domain-host, domain-name, sub-domain, resource, extension, mime type, ip address,
+loop back address, local address, foreign address.
+
+http://dev.localhost/myProject/admin/p1.php
+
+
+protocol:  http://
+port:  80
+uri-segment: dev.localhost/myProject/admin/p1.php
+domain-host: 
+domain-name: dev.localhost
+sub-domain: dev
+resource: myProject/admin/p1.php
+extension: .php
+mime type: .php 
+ip address: 127.0.0.1
+loop back address: 127.0.0.1
+local address: 127.0.0.1
+foreign address: ::1
+
+
+Q. What is mime type?
+Multipurpose Internet Mail Extensions (MIME)
+
+
+Q. How browser Handles a file loaded in the browser?
+ANS:- 1. Browser checks for the mime type supported by browser meta catalog (Dictionary)
+	  2. If it exists, then it will be loaded in the memory. Else, it will be thrown as a download (this is reason why
+	  browser does not) give any memory allocation to the non-supported file. And will be send to downloads.
+	  
+	  
+	  This is because of the browser can support two types of files:-
+	  a) Renderable :- 
+	  b) Non Rendarable :- 
+	  
+1. mime type supported ---> Memory loaded
+		a). renderable : the file which follows SGML standard or WHATWG standards.
+		
+		b). non-renderable : the file which do not follow SGML or WHATWG standard will be loaded as plain text (as raw file). In that case we need to add handlers to handle such type of file.
+		
+		
+		How to Run Any php file in the browser
+		----------------------------------------
+		1. Add Handler php8 ---> Software ---> PHP Interpreter ---> Activate --->
+
+
+2. mime type not supported ---> Downloaded not loaded into memory.
+	  
+
+
+
+
+
+
+

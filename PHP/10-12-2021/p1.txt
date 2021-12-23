@@ -1,0 +1,78 @@
+Getting started with php
+*************************
+1. Goto your document Root
+	c:/laragon/www
+	
+launch cmd or gitbash
+
+2. create folder
+	mkdir app-2021
+	
+3. goto inside app-2021 folder
+	cd app-2021
+
+
+
+3. How to create php file
+	start notepad <file-name.php>
+	for eg:
+	start notepad p1.php
+	start notepad p2.php
+	start notepad p3.php
+	start notepad p4.php
+
+4. How to run th program:-
+	php <filename.php>
+
+5. there are two possible cases.
+	case 1 : you will get a output
+	case 2 : php niot recognised as internal or external command
+	
+	
+	you have written the code of php ----> execute php interpreter
+	php interpreter ----> laragon
+	1. set the Environment variable set
+	2. use the laragon terminal
+	
+How many ways we can run php programs:
+1. using laragon terminal
+	launch laragon terminal
+	goto file
+	type php filename.php  
+	
+	output : terminal ----> php cli mode
+	
+2. using cmd/git bash ....
+	launh cmd/git bash
+	goto file
+	type 
+		php filename.php
+	
+	output: terminal ---> php cli mode
+	
+3. using php inbuilt server
+	cli server
+	goto file 
+	type
+		php -S localhost:<port-no>
+		
+	goto browser
+	make a request
+	localhost:<port-no>
+	type URL: filename.php
+	
+	url:
+		localhost:<port-no>/file-name.php
+		
+	output : web ---> php cli web mode
+	
+note: in this case you need not to enable laragon server.
+
+in php version 5.6.2 php supports inbuilt server
+	
+How to close the running server 
+ctrl + c :- current executing command close	
+	
+	
+	
+

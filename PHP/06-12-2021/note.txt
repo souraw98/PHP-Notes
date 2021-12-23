@@ -1,0 +1,44 @@
+What is Index.php?
+index.php is the by default file of Apache which will be directly loaded in the URL.
+
+Which server you are using?
+Apache Server
+
+Apache server is INSTALLED in which server?
+Laragon
+
+What is my current file name?
+hello.php
+
+Where this is stored?
+inside c:/laragon/www inside laragon server
+
+From where you want to access hello.php
+
+
+
+Where index.php is stored?
+inside c:/laragon/www
+					|index.php
+					
+
+From where you can access this index.php
+from browser (client)
+make the request
+
+URL(uniform resource locator)
+URI(unifrom resource Identifier)
+
+URL has following parts:-
+************************
+URL is a kind of web-address to some resource located at any server.
+URL can be of two types:-
+1. Protocol based
+2. Non-Protocol based: uses IP Address
+
+
+
+
+
+
+

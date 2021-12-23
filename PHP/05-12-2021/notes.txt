@@ -1,0 +1,86 @@
+Getting Started with LARAGON :-
+1. While opening laragon screen you will called as laragon control panel.
+
+1. menu :-  All the importaant settings, logs, errors, initialisation, configurations, related to, apache, mysql, php, will
+be listed here.
+
+Important files:
+1.  .ini => initialisation file
+			it will contain all the important services, assets, resources,
+			permission, utilities, required by any program during startup.
+			
+			ex:   php.ini,  laragon.ini,  mysql.ini,  etc...
+			
+2.  .log => log file
+			it will contain all the run time errors and exceptions occurred during execution of the program
+			
+				it stores the information with alerts status
+				1. success
+				2. info
+				3. warning
+				4. danger (critical)
+				
+
+Question:-  In live server displayerror are disabled being a developer how will you find the, errors for development environment.
+
+Ans:-
+error log
+
+Note ::
+What is scenerio in server environment
+www.facebook.com (master)  : Live 10 lakhs traffic
+test.facebook.com  (testing)    | PUSH
+dev.facebook.com   (dev-1)   | PUSH
+
+
+3.  .cnf or .conf => configuration file
+			configurations file, it contains the configuration which are required during execution of the program at
+			runtime execution
+
+
+WWW => This menu will open and show all the projects you will create any c:/laragon/www
+																				|p1.php
+																				|array
+																				|online examination
+																				
+
+		1. server document Root :- it contain the system path 
+								c:/laragon/www
+		
+		what is the document root of Wamp?
+			c:/wamp/www
+		
+		what is the document root of Xammp?
+			c:/xammp/htdocs
+			
+		
+		2. Explore Menu :- it is used to, open the existing project in explorer window.
+		
+		3. Share :- It is used to share the resources with your teammates connected to work.
+		
+		4. Project Launcher :- It will launch every project in URL
+		
+
+Quick App :-  In PHP every project is called as App.
+			
+			These Apps can be Classified as [Community-Name] App
+			for ex:-
+					1. Wordpress community :-  wordpress App
+					2. laravel community  :-  laravel App
+					3. Drupal community  :-  drupal App
+					4. CodeIgnitor community  :-  CodeIgnitor App  or CI App
+					...
+					...
+					etc..
+					
+
+			Using quick app we can Automatically, configure and Install Wordpress
+
+
+github awnishmmg zwave plug in	
+
+https://github.com/awnishmmg/Zwavexampp-list-plugin/blob/master/Xampp-Directory-Listing.zip?raw=true		
+			
+		
+		
+		

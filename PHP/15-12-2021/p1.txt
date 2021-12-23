@@ -1,0 +1,507 @@
+Getting started with php
+*************************
+1. Goto your document Root
+	c:/laragon/www
+	
+launch cmd or gitbash
+
+2. create folder
+	mkdir app-2021
+	
+3. goto inside app-2021 folder
+	cd app-2021
+
+
+
+3. How to create php file
+	start notepad <file-name.php>
+	for eg:
+	start notepad p1.php
+	start notepad p2.php
+	start notepad p3.php
+	start notepad p4.php
+
+4. How to run th program:-
+	php <filename.php>
+
+5. there are two possible cases.
+	case 1 : you will get a output
+	case 2 : php niot recognised as internal or external command
+	
+	
+	you have written the code of php ----> execute php interpreter
+	php interpreter ----> laragon
+	1. set the Environment variable set
+	2. use the laragon terminal
+	
+How many ways we can run php programs:
+1. using laragon terminal
+	launch laragon terminal
+	goto file
+	type php filename.php  
+	
+	output : terminal ----> php cli mode
+	
+2. using cmd/git bash ....
+	launh cmd/git bash
+	goto file
+	type 
+		php filename.php
+	
+	output: terminal ---> php cli mode
+	
+3. using php inbuilt server
+	cli server
+	goto file 
+	type
+		php -S localhost:<port-no>
+		
+	goto browser
+	make a request
+	localhost:<port-no>
+	type URL: filename.php
+	
+	url:
+		localhost:<port-no>/file-name.php
+		
+	output : web ---> php cli web mode
+	
+note: in this case you need not to enable laragon server.
+
+in php version 5.6.2 php supports inbuilt server
+	
+How to close the running server 
+ctrl + c :- current executing command close	
+
+
+4. Laragon (server) web-interface:-
+	server : on
+	php : apache : on
+	mysql : on
+	
+	make the request using browser, for http://localhost:<apache-port>
+	http://localhost:786
+	
+	or
+	Quick Open using cmd
+	window+R
+	type cmd hit enter
+	
+-----------------------------------------------------------------------------------------
+
+How any ways you can execute the PHP code
+1. php cli mode
+		a. laragon terminal
+		b. git bash
+		c. cmd/powershell
+		
+		d. php interactive mode ---> php REPL ---> php>
+
+		How to launch php repl mode
+		cmd:-
+			type php -a
+			php> without using opening and closing of php tags
+			but ; is mandatory.
+			
+			wap in php interactive
+			php > $x="ravi";
+			php > echo $x;
+			ravi
+			
+			Note: php -a and php -S, here -a and -S are called as command line argument.
+			
+			on suppliyng these arguments,  the program starts executing in the same given environment.
+			
+			How to see list of all arguments:-
+			
+			cmd: php -help
+			
+			php -a :- interactive mode
+			php -r :- execute the code as readline
+			php -v :- display the current version og php
+			php --version : -display the current version 
+			php -h :- run the helps
+			php -m :- loads all the important modules initialised by php.ini
+			
+			
+			wap in php to run a php code in readline
+			**************************************
+			we will use php -r command to run the code in readline
+			
+			cmd:> php -r "echo 'hello world';"
+			hello world
+			
+			
+	
+2. php web mode	
+		a. php cli server: php -S <url>:<any-port-no>
+		b. using laragon web interface
+		
+		
+We have only two types of program in a programming language
+1. with input : Addition oftwo numbers with input.
+2. without input : Hello world
+
+
+How to create  our first input program in web-interface
+*****************************************************************************88
+
+Input fields : HTML FORMS
+
+1. create a html form
+2. Add any number of field you require
+3. Add a submit button
+4. Add form Tag, with Action, and method="GET" or method="POST"
+5. Add the server-side page url which is going to handle the request at server-side.
+6. Fill the form and Hit on submit button.
+7. You will get, a Not Found 404 error. Because resource does not exist.
+8. create a server-side page, which can handle client request and process data and give the response.
+9. use the superglobal variable, of  php to accept the request using
+	$_REQUEST to handle the form fields.
+10. since, $_REQUEST is a, Array, it has a key as name field attribute in HTML form and use echo statement to display the output and after words comment it.
+11. Nte that, add id and name attribute on html forms to handle each form controls on server side.
+	Concept: This concept is valid for all language jsp, python, asp.net and php also
+	id ---> for javascript or client side.
+	name ---> for server side 
+	
+	
+**************************************************************************************************
+
+Task:
+1. wap in php to accept name and display on another page
+2. WAP in php to take 3 numbers as input and display sum
+3. wap in php to make calculator to find sum, subtract, mul, div
+4. wap in php take info of user name, email, password, mobile and display his info in next page
+5. wap in php p,r,t and find S.I.
+6. wap in php accept length, breadth from user and calculate area of rectangle and parameter
+7. wap in php to take radius as input and find area, circumfrence of a circle
+8. wap in php to find remainder of a given two numbers when a/b
+9. wap in php to find remainder of a given two numbers when a/b without modulo operator
+10. wap in php to take a and b as input and use -,/,* operator to find sum but you are not allowed to use + operator and condition
+	1. a>b
+	2. a>0
+	3. b>0
+11. wap in php to take input of 5 subject of student, Enter his marks and show the marks of each subject with overall %
+
+----------------------------------------------------------------------------------------------------------
+
+using Client side validation on PHP
+***********************************
+
+Q. What is validation and types of validation?
+Ans:- Validating or restricting the user from entering the invalid data in the form field is called as validation
+
+Most common question:-
+what is the difference between validation, authentication and authorisation
+
+Client Side: Front End Language (HTML, CSS, CSS3, Less, SASS, VanillaJS(javascript), JQuery, Bootstrap, Tailwind CSS, SVG, Images, Fonts, Icons, Themes, Widgets, Layouts, Other framework of js (reactjs, angular, angularjs,backbonejs,emberjs,nextjs,redux,vuejs.....)) 
+
+Server Side :- Backend Language including Database (c++, go, rust, c, php, python, ruby, R, nodejs, expressjs, JAVA(JSP,servelet,), asp.net, scala, perl....)
+
+Database:- 
+SQL Based Database (Structured database)
+1. oracle
+2. mysql
+3. SQLite
+4. Mariadb
+5. MS SQL
+
+Unstructured Database : No-SQL Database
+1. MongoDB
+2. Dynam0 DB
+3. CouchDb
+4. Candendra
+5. Redis
+6. PostgreSQL
+7. Firebase
+8. S3(Simple Storage Service) bucket (AWS)
+
+Most common question:-
+what is the difference between validation, authentication and authorisation
+
+1. validation will prevent server from, providing invalid or uploading illegal files format in the database or server by the user.
+
+for eg:- Enter The Name: 1234567890   invalid
+
+Incase of validation there is no involvement of database.
+validation : javascript : client side
+validation : php : serverside
+	1. both side :- because there may be chance that user amy have blocked his javascript or disabled the javascript.
+	
+	Interview:-
+	Q1. Making email id unique for each registartion is example?
+	ANS:- Athentication why?
+			Because user email will be checked from database.
+			
+	Note:- In case of validation either from client side or server side only logic will be involved, not database.
+	
+	But checking the format of email is validation.
+	abcd@gmail.com ----> format match ----> pattern ----> pattern matching or regular expression.
+	
+2. Authentication:-  Cross checking the identity of existing user from database is called as Authentication
+
+	Such types of features is used in case of 
+	Login, Email verification, unique email, forget password, google login, fb login, github login, linked in login.....
+	opt verification, otp login
+	
+	Question:- captcah is which type of validation
+	captcha:- completely automated public turing test to check computers and humans apart.
+	
+	It is always server side because it invloves session which is in server side ----> session data that is already encrypted.
+	
+3. Authorization:- It refers to permission, given to authenticated user.
+				   Once the user is valid then it may have few permission or may not have any permission. this concept is authorization.
+				   
+				   for:-
+						I can register in panel:- login in there (authenticated)
+						----> loginned ----> i cannot see any course (authorised for any course)
+						
+					for eg:- trial user,    premium user
+							|10 features	|20 features
+							(non-authorised) (authorised)
+							
+			1. Types of  Authorization
+				a. No Authorization (user ---> Role)
+				b. Fully Authorization (Super Admin ---> Role)
+				c. Partially Authorization (admin ---> Role)
+				
+			Roles & permission is kind of Authorization.
+			
+			
+			eg:-
+			School ERP:- (Enterprise Resource Planning)
+			1. Teacher
+					|Add Attendence
+					|View Attendence
+					
+			2. Student
+					|View Attendence
+					
+			Here student cannot add attendence because student is not authorised for adding attendence.
+			
+Working With PHP CLI:-
+1. hello world : without input
+2. Addition of two numbers: with input
+
+Inn order to take input on console window or cli mode, we need a scanner.php file where we define input()function.
+
+
+Postmortem of input() function inside scanner.php
+(************************************************)
+inn order to understand this, how input function works following concepts are required
+
+1. use of echo statements
+2. driver protocol  [protocol]://
+3. concept of user-defined function
+4. returning from a function
+5. using default argument in a function
+6. file-pointer and file handling
+7. input output buffer or I/O streams
+8. using trim() function.
+
+Q.  Do  PHP support inbuilt, console input function?
+ANS: yes, readline() is predefined function used to take input.
+
+
+WAP inn php to perform addition of two numbers using readline mehthod in cli.
+*******************************************************************************
+
+php > $name = readline();                                                                                                                                                   
+saurav                                                                                                                                                                      
+php > echo $name;                                                                                                                                                           
+saurav
+php > $name = readline('Enter the Name');                                                                                                                                   
+Enter the Name             saurav                                                                                                                                                        
+php > echo $name;                                                                                                                                                           
+saurav
+php >                                                                                                                    
+       
+<?php
+
+$a = readline('Enter First number: ');
+$b=readline('Enter Second number: ');
+
+$c=$a+$b;
+
+echo "Sum is: ".$c;
+
+?>
+
+
+OUTPUT:-
+Enter First number: 4
+Enter Second number: 4
+Sum is: 8                                            
+
+Explanation of above concepts:-
+************************************
+
+1. use of echo statements
+		we can echo statement for printing the string value, or any variable value or any constant literal.
+		
+		php > echo 'Hello World';
+		Hello World
+		php > echo "Hello World";
+		Hello World
+		php > echo 10;
+		10
+		php > echo $x=10;
+		10
+		php > echo true;
+		1
+		php > echo  false;
+		
+		
+		php > echo [10,20,30];
+		Array is string conversion error
+		
+		NOTE:: echo  will evaluate,  the expression as a string.
+		
+		lower conversion : int
+		upper conversion : string
+		
+		php > echo [10,20,30];                                                                                                                                                      
+
+		Notice: Array to string conversion in php shell code on line 1
+		Array
+		php > echo 'hy';                                                                                                                                                            
+		hy
+		php > echo join([10,20,30]);                                                                                                                                                
+		102030
+		php >   
+		
+		
+		
+		php > echo null; //constant literal
+		
+		php > echo null;
+		php > echo json_encode(null);
+		null
+		php >   
+		
+		php > echo (null==false);
+		1
+		php > echo (null===false);
+		php>  
+
+
+			NOTE:: null==0==false==''==true==1
+			
+			=== we can find the difference
+	
+		
+		
+		Q1: $x=(false=='');
+		a) 1  valid
+		b) 0
+		c)  
+		d) None of the above
+		
+		Q1: $x=(false==='');
+		a) 1  valid
+		b) 0 
+		c)    valid
+		d) None of the above
+		
+		
+2. driver protocol  [protocol]://
+		php supports list of driver protocols
+		These are also called as wrapper, or scheme in the php
+		1. file:// - Accessing local filesystem
+		2. http:// - Accessing HTTP(s) URLs
+		3. ftp:// - Accessing FTP(s) URLs
+		4. php:// - Accessing various I/O streams
+					It can handle any type of Input or Output from any interface
+					it can be terminal, it can be UI based, or any third party (API) Application programming Interface
+					
+					
+					In scanner.php we wrote a code
+					$input = fgets(STDIN,1024)
+					STDIN = stdinput
+					STDOUT = stdoutput
+					STDERR = stderror
+					
+					the meaning of STDIN = php://input
+					the meaning of stdout = php://output (5.6.2) or php://memory <(5.6.-)
+					
+					php://input
+					php://input is a read-only stream that allows you to read raw data from the request body. php://input is not available with enctype="multipart/form-data".
+					
+					php://output
+					php://output is a write-only stram that allows you to write to the output buffer mechanism in the same way as print and echo.
+					
+					Note that, these are used for Raw Input only (json input) from client request.
+					
+					What is use of fgets
+					**********************
+					fgets() allows you to read data from any input resource.
+					it internally uses, file pointer.
+					By default it can read 1024 characters at a time from the input buffer.
+					
+					1. fgets : terminal read
+						fgets(STDIN,1024)
+						
+					2. fgets : file  read
+						
+						fgets can read any no of character from any file, or resource before EOL.
+						
+					
+					Case 1:-
+					fgets accepts two arguments 
+					1. resource handler this can be a wrapper, scheme, filr pointer
+					2. buffer_size: no of memory blocks reserved for, input characters stream.
+					
+					it works like a link list
+					where 0 : Address
+						  1 : Base Data : Header Data : Header Node
+						  2 : Other Nodes
+						  
+					
+					if buffer_size not supplied : default 1024
+					if buffer_size == 0 : false
+					if buffer_size == 1 : false
+					if buffer_size > 1 : character Bit reserved in memory block headed<pointed by)
+					by base node.
+					
+					
+		5. zlib:// - Compression Streams
+		6. data:// - Data (RFC 2397)
+		7. glob:// - Find pathnames matching pattern
+		8. phar:// - PHP Archive
+		9. ssh2:// - Secure Shell 2
+		10. rar:// - RAR
+		11. ogg:// - Audio Streams
+		12. expect:// - Process Interactions Streams
+
+
+3. concept of user-defined function
+		
+		wap in php to show user-defined functions
+		1. function <any-function>($args1,$args2,$args3,......){
+			//code statement
+			}
+			
+		2. wap in php to add two numbers using udf
+
+
+4. returning from a function : using the return keyword inside function, the function should  return a value we have already seen in add() function.
+
+
+5. using default argument in a function : if we want to make argument optional (can pass or cannot pass) in that case define a default value to the argument in function declaration and definition
+
+	function add($a,$b=0)
+	{
+	$a : mandatory argument
+	$b : optional argument
+	}
+
+
+6. file-pointer and file handling
+7. input output buffer or I/O streams
+8. using trim() function.
+
+
+
+
+
+

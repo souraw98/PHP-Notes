@@ -1,0 +1,64 @@
+Difference between HTTP and HTTPS
+
+							HTTP						HTTPS
+----------------------------------------------------------------------------------------------					
+URL					|		https://			|		https://
+Security			|		Unsecure			|		Enhanced Security
+Port				|		PORT 80				|		PORT 443
+OSI layer			|		Application Layer	|		Transport Layer
+TLS Certificate		|		NO					|		YES
+Doamin validation	|		Not Required		|		Domain validation (+legal validation)
+Encryption			|		No					|		Yes
+
+
+URL SYNTAX:-
+[protocol-name]://<sub-domain>/<domain>/<host>/:<PORT>/<resource-url>
+
+https://            protocol
+test                sub-domain
+seeksolution		domain-name
+.in                 host
+:<443>              port
+web-address/login   resource-url
+end-point
+
+uri-segment:-  each part separated by / single slash, is called as uri-segment
+
+after port :-  it is basically path to resource
+
+after protocol and before endpoints (test.seeksolution.in:443) is called as domain name.
+Every Domain may have a sub-domain or not but will have a port.
+and every domain will have a IP Address, since one cannot learn or remember IP Address so, we provide a allias name
+and this allias name is called as domain name and this domain name has to be registerd (mapped) with a IP Address in DNS.
+
+Q.Identify protocol, port, uri-segment, domain-host, domain-name, sub-domain, resource, extension, mime type, ip address,
+loop back address, local address, foreign address.
+
+http://dev.localhost/myProject/admin/p1.php
+
+
+protocol:  http://
+port:  80
+uri-segment: dev.localhost/myProject/admin/p1.php
+domain-host: 
+domain-name: dev.localhost
+sub-domain: dev
+resource: myProject/admin/p1.php
+extension: .php
+mime type: .php 
+ip address: 127.0.0.1
+loop back address: 127.0.0.1
+local address: 127.0.0.1
+foreign address: ::1
+
+
+Q. What is mime type?
+Multipurpose Internet Mail Extensions (MIME)
+
+
+
+
+
+
+
+
