@@ -948,11 +948,57 @@ Types of Output Strings:-
 
 1. Raw String (Single Quotes):- Any String wrapped inside '' will be a Raw String. In this Case, escape character sequence like, \n, \t, \f, \v, \r, \a, and variables value are not processed.
 
-2. Processed String (Double Quotes):- In case of processed string, every character within "" will be processed.
-Any stirng wrapped inside "" quotes are called as processed string. and they will process, each and every special character like escape sequence \n,\t,\f,\v,\r,\a, and variables will also be processed
 
-3. HereDoc String:-
-4. newDoc String:-ssss
+2. Processed String (Double Quotes):- In case of processed string, every character within "" will be processed.
+Any stirng wrapped inside "" quotes are called as processed string. and they will process, each and every special character like escape sequence \n,\t,\f,\v,\r,\a, and variables will also be processed.
+
+
+3. HereDoc String:- it works, under Block Level 
+	syntax:
+		echo <<<BLOCK
+		
+		
+		BLOCK;
+		
+		echo <<<"BLOCK"
+		
+		
+		BLOCK;
+		
+		HereDoc is capable of processing each and every possible combinations.
+		1. escape squqence character
+		2. Variable process
+		3. multiple lines
+		4. extra spaces
+		5. invalid combinations '' inside '' and "" inside "" and `` inside ``
+		6. Behaviour --> Processed String
+		hence, heredoc is also called as Block Level Processed String or Block Level Double Quotes String.
+		7. The best use of heredoc is to generate dynamic forms
+		
+
+4. newDoc String:- it works, under Block level
+	syntax:
+			echo <<<'BLOCK'
+			
+			BLOCK;
+			
+	newDOc is not capable of processing each and every possible combinations, hence generate the raw output.
+	
+		1. escape characters squqence not supported
+		2. variable process not supported
+		3. multiple line supported
+		4. extra spaces supported
+		5. invalid combinations '' inside '' and "" inside "" and `` inside ``
+		6. Behaviour = raw string
+		hence, newDoc is also called BlockLevel raw string or Block level single quotes string.
+		7. The best used of newDoc is, to generate static forms.
+
+			
+Difference between HereDoc and NewDoc string
+
+				HereDoc                                   NewDoc
+	
+	1. 
 
 
 
